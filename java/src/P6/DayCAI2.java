@@ -12,6 +12,7 @@ public class DayCAI2 {
 
         System.out.println("요일명을 영어 소문자로 입력하시오.");
 
+
         int retry; //다시 한번
         int last = -1;  //이전 요일
 
