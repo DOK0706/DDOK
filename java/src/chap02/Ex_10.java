@@ -1,6 +1,5 @@
 package chap02;
 
-
 public class Ex_10 {
     public static void main(String[] args) {
         echo("안녕", 3);
