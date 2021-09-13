@@ -1,7 +1,7 @@
 package P7;
 
-
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class MentalArithmetic {
