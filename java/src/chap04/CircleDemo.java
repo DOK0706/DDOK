@@ -10,7 +10,9 @@ class Circle {
     }
 
     public Circle(double color) {
-        this.radius = radius;
+//        this.radius = radius;
+
+        this(color, "초록");
     }
 
     public Circle(String color) {
@@ -36,7 +38,7 @@ public class CircleDemo {
         c1.color = "빨강";
 
         c1.print();
-        
+
         Circle c2 = new Circle(10.0, "노랑");
         c2.print();
 
@@ -47,3 +49,4 @@ public class CircleDemo {
         c4.print();
     }
 }
+
