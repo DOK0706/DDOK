@@ -20,5 +20,6 @@ public class Circle2Demo {
 
         System.out.println("원의 갯수: " + Circle2.numOfCircles);
         System.out.println("원의 갯수: " + myCircle.numCircles);
+        System.out.println("원의 갯수: " + yourCircle.numCircles);
     }
 }
