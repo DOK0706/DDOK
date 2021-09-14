@@ -1,6 +1,6 @@
 package challenge;
 
-public class Complex {
+class Complex {
     double num1;
     String num2;
 
