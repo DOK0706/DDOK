@@ -1,5 +1,7 @@
 package challenge;
 
+// 3개의 정숫값에서 중간값 구하기
+
 import java.util.Scanner;
 
 class Med3 {

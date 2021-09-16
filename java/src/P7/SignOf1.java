@@ -1,5 +1,5 @@
 package P7;
-
+// 입력한 정수의 부호를 판정
 
 import java.util.Scanner;
 

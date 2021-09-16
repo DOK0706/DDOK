@@ -1,5 +1,7 @@
 package P7;
 
+// 3개의 정숫값에서 최솟값 구하기
+
 import java.util.Scanner;
 
 class Min3 {
