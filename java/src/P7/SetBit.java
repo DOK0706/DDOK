@@ -29,13 +29,19 @@ class SetBit {
         Scanner stdIn = new Scanner(System.in);
 
         System.out.println("정수 x의 pos번째 비트를 변경합니다.");
-        System.out.print("x: "); int x = stdIn.nextInt();
-        System.out.print("pos: "); int pos = stdIn.nextInt();
+        System.out.print("x: ");
+        int x = stdIn.nextInt();
+        System.out.print("pos: ");
+        int pos = stdIn.nextInt();
 
-        System.out.print("x                 = "); printBits(x);
-        System.out.print("\nset(x,pos)      = "); printBits(set(x, pos));
-        System.out.print("\nreset(x,pos)    = "); printBits(reset(x, pos));
-        System.out.print("\ninverset(x,pos) = "); printBits(inverse(x, pos));
+        System.out.print("x                 = ");
+        printBits(x);
+        System.out.print("\nset(x,pos)      = ");
+        printBits(set(x, pos));
+        System.out.print("\nreset(x,pos)    = ");
+        printBits(reset(x, pos));
+        System.out.print("\ninverset(x,pos) = ");
+        printBits(inverse(x, pos));
         System.out.println();
     }
 }
