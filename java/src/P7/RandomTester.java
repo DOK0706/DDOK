@@ -26,4 +26,5 @@ class RandomTester {
 
         System.out.println("생성한 난수는 " + random(min, max) + "입니다.");
     }
+
 }

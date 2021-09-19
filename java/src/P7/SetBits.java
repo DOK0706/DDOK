@@ -14,13 +14,15 @@ class SetBits {
     static int setN(int x, int pos, int n) {
         return x | (~(~0 << n) << pos);
     }
+
     //--- x의 pos 위치에 있는 비트부터 n개 비트를 0로 변경한 값을 반환 ---//
     static int resetN(int x, int pos, int n) {
-        return x & (~(~0 <<n)<<pos);
+        return x & (~(~0 << n) << pos);
     }
+
     //--- x의 pos 위치에 있는 비트부터 n개 비트를 0로 변경한 값을 반환 ---//
     static int inverseN(int x, int pos, int n) {
-        return x ^ (~(~0 <<n)<<pos);
+        return x ^ (~(~0 << n) << pos);
     }
 
     public static void main(String[] args) {
