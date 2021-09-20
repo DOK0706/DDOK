@@ -9,8 +9,8 @@ public class ThreeDigits {
         do {
             System.out.print("세 자리의 정숫값: ");
             x = stdIn.nextInt();
-        }while (x <= 100 || x>=999);
+        } while (x <= 100 || x >= 999);
 
-        System.out.println("입력한 값은 "+x+"입니다.");
+        System.out.println("입력한 값은 " + x + "입니다.");
     }
 }
