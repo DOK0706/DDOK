@@ -6,14 +6,18 @@ import java.util.Scanner;
 
 public class linearSearch {
     //--- 배열 a의 요소로부터 key와 일치하는 가장 앞에 있는 요소를 선형 탐색 ---//
-    static int linearSearch(int [] a, int key) {
-        for (int i=0;i<a.length;i++) {if(a[i]==key) return i;} // 탐색 성공 (인덱스 반환)
+    static int linearSearch(int[] a, int key) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == key) return i;
+        } // 탐색 성공 (인덱스 반환)
         return -1;
     }
 
     //--- 배열 a의 요소로부터 key와 일치하는 가장 뒤에 있는 요소를 선형 탐색 ---//
-    static int linearSearchR(int [] a,int key){
-        for (int i=a.length - 1;i>=0;i--) {if(a[i]==key) return i;} // 탐색 성공 (인덱스 반환)
+    static int linearSearchR(int[] a, int key) {
+        for (int i = a.length - 1; i >= 0; i--) {
+            if (a[i] == key) return i;
+        } // 탐색 성공 (인덱스 반환)
         return -1;
     }
 
@@ -21,9 +25,9 @@ public class linearSearch {
         Scanner stdIn = new Scanner(System.in);
         System.out.print("요소 수: ");
         int num = stdIn.nextInt();
-        int[] x=new int[num];   // 요소 수 num의 배열
-        for (int i =0;i<num;i++){
-            System.out.print("x[" + i +"]:");
+        int[] x = new int[num];   // 요소 수 num의 배열
+        for (int i = 0; i < num; i++) {
+            System.out.print("x[" + i + "]:");
             x[i] = stdIn.nextInt();
         }
 
