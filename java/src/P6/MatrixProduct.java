@@ -33,8 +33,8 @@ public class MatrixProduct {
             }
         }
         System.out.println("행렬 a와 b의 곱");
-        for (int i =0;i<4;i++){
-            for (int j =0;j<4;j++)
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++)
                 System.out.printf("%5d", c[i][j]);
             System.out.println();
         }
