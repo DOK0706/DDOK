@@ -8,7 +8,7 @@ public class AryRmv {
     //--- 배열 a에서 a[idx]]를 삭제(뒤에 있는 요소들을 하나씩 앞으로 이동) ---//
     static void aryRmv(int[] a, int idx) {
         if (idx >= 0 && idx < a.length) {
-            for (int i=idx; i<a.length-1;i++) a[i] = a[i+1];
+            for (int i = idx; i < a.length - 1; i++) a[i] = a[i + 1];
         }
     }
 
@@ -17,10 +17,10 @@ public class AryRmv {
 
         System.out.print("요소 수: ");
         int num = stdIn.nextInt();
-        int[] a=new int[num];   // 요소 수가 num인 배열
+        int[] a = new int[num];   // 요소 수가 num인 배열
 
-        for(int i =0; i<num ; i++) {
-            System.out.print("a["+i+"]:");
+        for (int i = 0; i < num; i++) {
+            System.out.print("a[" + i + "]:");
             a[i] = stdIn.nextInt();
         }
 
@@ -28,7 +28,7 @@ public class AryRmv {
         int idx = stdIn.nextInt();
 
         aryRmv(a, idx);     // 배열 a에서 a[idx]를 삭제
-        for (int i=0;i<num;i++) // 배열 a표시
-            System.out.println("a["+i+"]:" + a[i]);
+        for (int i = 0; i < num; i++) // 배열 a표시
+            System.out.println("a[" + i + "]:" + a[i]);
     }
 }
