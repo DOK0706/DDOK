@@ -1,15 +1,15 @@
-package chap04;
+/*package chap04;
 //연속 호출
 class Person {
     String name;
     int age;
 
-    public Person SetName(String name) {
+    public Chap06.Person SetName(String name) {
         this.name = name;
         return this;
     }
 
-    public Person SetAge(int age) {
+    public Chap06.Person SetAge(int age) {
         this.age = age;
         return this;
     }
@@ -21,7 +21,7 @@ class Person {
 
 public class MethodChainDemo {
     public static void main(String[] args) {
-        Person p = new Person();
+        Chap06.Person p = new Chap06.Person();
 
 //        p.SetName("김도균");
 //        p.SetAge(17);
@@ -30,3 +30,4 @@ public class MethodChainDemo {
         p.SetName("김도균").SetAge(17).sayHello();
     }
 }
+*/
