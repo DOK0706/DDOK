@@ -12,21 +12,21 @@ public class Shuffle {
         int n = stdIn.nextInt();    // 요소 수 읽기
         int[] a = new int[n];       // 배열 생성
 
-        for(int i=0;i<n;i++){
-            System.out.print("a["+i+"] = ");
-            a[i]= stdIn.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.print("a[" + i + "] = ");
+            a[i] = stdIn.nextInt();
         }
 
-        for(int i = 0;i<2*n;i++) {
+        for (int i = 0; i < 2 * n; i++) {
             int idx1 = rand.nextInt(n);
             int idx2 = rand.nextInt(n);
             int t = a[idx1];
-            a[idx1]=a[idx2];
-            a[idx2]=t;
+            a[idx1] = a[idx2];
+            a[idx2] = t;
         }
 
         System.out.println("요소를 섞었습니다.");
-        for (int i =0;i<n;i++)
-            System.out.println("a["+i+"] = "+a[i]);
+        for (int i = 0; i < n; i++)
+            System.out.println("a[" + i + "] = " + a[i]);
     }
 }
