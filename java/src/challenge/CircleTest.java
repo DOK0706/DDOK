@@ -2,19 +2,9 @@ package challenge;
 
 public class CircleTest {
     public static void main(String[] args) {
-        Circle c = new Circle();
-        ColoredCirlce C = new ColoredCirlce();
-    }
-
-    private static class ColoredCirlce {
-        int radius;
-        String color;
-
-        void show() {
-
-        }
-    }
-
-    private static class Circle {
+        Circle c = new Circle(5);
+        ColoredCircle C = new ColoredCircle(5,"빨간색");
+        c.show();
+        C.show();
     }
 }
