@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f955d9f5-1434-44b0-96b5-50cb3fdadbd8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/ColoredCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/ForeignStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/MovablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/PointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/src/challenge/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/src/challenge/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/src/challenge/CircleTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1zWTWAERsRw7BdDeBbI6sJUY4dq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/sangsi" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f955d9f5-1434-44b0-96b5-50cb3fdadbd8" name="Changes" comment="" />
+      <created>1634262872579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634262872579</updated>
+      <workItem from="1634262873904" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
