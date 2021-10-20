@@ -50,3 +50,4 @@ class CDPlayer extends Player {
         }
         // ...
     }
+}
