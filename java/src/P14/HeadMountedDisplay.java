@@ -16,22 +16,27 @@ public class HeadMountedDisplay implements Wearable, Skinnable {
 
     // 스킨 변경
     public void changeSkin(int skin) {
-        this.skin=skin;
+        this.skin = skin;
     }
 
     // 현재 스킨 표시
     public void putSkin() {
         switch (skin) {
             case BLACK:
-                System.out.println("BLACK DISPLAY");  break;
+                System.out.println("BLACK DISPLAY");
+                break;
             case RED:
-                System.out.println("RED DISPLAY");    break;
+                System.out.println("RED DISPLAY");
+                break;
             case GREEN:
-                System.out.println("GREEN DISPLAY");  break;
+                System.out.println("GREEN DISPLAY");
+                break;
             case BLUE:
-                System.out.println("BLUE DISPLAY");   break;
+                System.out.println("BLUE DISPLAY");
+                break;
             case YELLOW:
-                System.out.println("YELLOW DISPLAY"); break;
+                System.out.println("YELLOW DISPLAY");
+                break;
         }
     }
 }
@@ -45,7 +50,7 @@ class HeadMountedDisplayTester {
         hmd.changeSkin(Skinnable.YELLOW);   // 스킨 변경
         hmd.putSkin();  // 스킨 표시
 
-        Wearable w =hmd;
+        Wearable w = hmd;
         w.putOn();      // 착용
         w.putOff();     // 해제
 
