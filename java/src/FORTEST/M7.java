@@ -39,10 +39,14 @@ class Teacher extends Person {
 
 class Ex1 {
     public static void main(String[] args) {
-        Person p2 = new Teacher();
-        System.out.println(p2.com);
-        System.out.println(p2.name);
-        p2.whoami();
-        p2.like();
+        Student1 s =new Student1();
+        Person p = new Person();
+
+        System.out.println(p instanceof Student1);
+        System.out.println(s instanceof Person);
+        System.out.println(s instanceof Object);
+        System.out.println(s instanceof Student1);
+        p=s;
+        System.out.println(p instanceof Student1);
     }
 }
