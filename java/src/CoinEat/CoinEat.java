@@ -91,15 +91,15 @@ public class CoinEat extends JFrame {
     }
 
     public void KeyProcess() {
-        if (up && playerY - 3 > 30) playerY -= 3;
-        if (down && playerY + playerHeight + 3 < 500) playerY += 3;
-        if (left && playerX - 3 > 0) playerX -= 3;
-        if (right && playerX + playerWidth + 3 < 500) playerX += 3;
+        if (up && playerY - 3 > 30) playerY -= 200;
+        if (down && playerY + playerHeight + 3 < 500) playerY += 200;
+        if (left && playerX - 3 > 0) playerX -= 200;
+        if (right && playerX + playerWidth + 3 < 500) playerX += 100;
     }
 
     public void crashCheck() {
-        if (playerX+playerWidth > coinX && coinX + coinWidth > playerX && playerY + playerHeight > coinY && coinY + coinrHeight > playerY) {
-            score+=100;
+        if (playerX + playerWidth > coinX && coinX + coinWidth > playerX && playerY + playerHeight > coinY && coinY + coinrHeight > playerY) {
+            score += 100;
             coinX = (int) (Math.random() * (501 - playerWidth));
             coinY = (int) (Math.random() * (501 - playerHeight - 30)) + 30;
         }
