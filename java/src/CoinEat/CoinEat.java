@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.Graphics;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.geom.AffineTransform;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -56,6 +57,7 @@ public class CoinEat extends JFrame {
                 switch (e.getKeyCode()) {
                     case KeyEvent.VK_W:
                         up = false;
+                        rotate++;
                         break;
                     case KeyEvent.VK_S:
                         down = false;
@@ -90,11 +92,11 @@ public class CoinEat extends JFrame {
         coinY = (int) (Math.random() * (501 - playerHeight - 30)) + 30;
     }
 
+    public int rotate = 0;
+
     public void KeyProcess() {
-        if (up && playerY - 3 > 30) playerY -= 200;
-        if (down && playerY + playerHeight + 3 < 500) playerY += 200;
-        if (left && playerX - 3 > 0) playerX -= 200;
-        if (right && playerX + playerWidth + 3 < 500) playerX += 100;
+//        if (up)
+//            rotate++;
     }
 
     public void crashCheck() {
@@ -105,10 +107,69 @@ public class CoinEat extends JFrame {
         }
     }
 
+
+    public void rp(Graphics h) {
+        super.paint(h);
+        h.setFont(new Font("궁서체", Font.BOLD, 50));
+        h.setColor(Color.BLUE);
+
+
+        Graphics2D g2d = (Graphics2D) h;
+        AffineTransform defaultAt = g2d.getTransform();
+
+        // rotates the coordinate by 90 degree counterclockwise
+        AffineTransform at0 = AffineTransform.getQuadrantRotateInstance(rotate);
+        g2d.setTransform(at0);
+
+        switch (rotate) {
+            case 0:
+                g2d.drawString("와", 250, 250);
+                break;
+            case 1:
+                g2d.drawString("와", 200, -250);
+                break;
+            case 2:
+                g2d.drawString("와", -300, -200);
+                break;
+            case 3:
+                g2d.drawString("와", -250, 300);
+                break;
+            case 4:
+                rotate = 0;
+                break;
+        }
+        g2d.setTransform(defaultAt);
+
+        // rotates the coordinate by 90 degree counterclockwise
+//        AffineTransform at1 = AffineTransform.getQuadrantRotateInstance(1);
+//        g2d.setTransform(at1);
+//
+//        g2d.drawString("와", 200, -250);
+//
+//        g2d.setTransform(defaultAt);
+//
+//
+//        AffineTransform at2 = AffineTransform.getQuadrantRotateInstance(2);
+//        g2d.setTransform(at2);
+//
+//        g2d.drawString("와", -300, -200);
+//
+//        g2d.setTransform(defaultAt);
+//
+//        AffineTransform at3 = AffineTransform.getQuadrantRotateInstance(3);
+//        g2d.setTransform(at3);
+//
+//        g2d.drawString("와", -250, 300);
+//
+//        g2d.setTransform(defaultAt);
+        this.repaint();
+    }
+
     public void paint(Graphics g) {
         bufferImage = createImage(500, 500);
         screenGraphic = bufferImage.getGraphics();
-        screenDraw(screenGraphic);
+        rp(screenGraphic);
+        System.out.println(rotate);
         g.drawImage(bufferImage, 0, 0, null);
     }
 
@@ -118,8 +179,11 @@ public class CoinEat extends JFrame {
         g.drawImage(coin, coinX, coinY, null);
         g.drawImage(player, playerX, playerY, null);
         g.setColor(Color.WHITE);
-        g.setFont(new Font("Arial", Font.BOLD, 40));
-        g.drawString("SCORE : " + score, 30, 80);
+
+        Graphics2D g2d = (Graphics2D) g;
+        AffineTransform defaultAt = g2d.getTransform();
+
+
         this.repaint();
     }
 
